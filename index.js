@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-const product = require("./api/product");
-
-app.use(express.json({ extended: false }));
-
-app.use("/api/product", product);
-
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
+});
+app.listen(5000, () => {
+  console.log("Running on port 5000.");
+});
+// Export the Express API
+module.exports = app;
