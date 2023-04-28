@@ -1,7 +1,7 @@
 {
   "name": "express-vercel",
   "scripts": {
-    "start": "node index.js"
+    "start": "node api/product.js"
   },
   "dependencies": {
     "express": "^4.17.1"
